@@ -1,0 +1,217 @@
+.info_section{
+    position: fixed;
+    width: 18vw;
+    height: 85vh;
+    top: 57px;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 6px 0px 20px 3px #666; 
+    -moz-box-shadow: 6px 0px 20px 3px #666;
+    -webkit-box-shadow: 6px 0px 20px 3px #666;
+    overflow-y: scroll;
+    h1{
+        font-size: 1.9vw;
+    }
+    h2{
+        font-size: 1.4vw;
+    }
+    p{
+        font-weight: 500;
+    }
+    span{
+        font-size: 18px;
+        font-size: 0.95vw;
+    }
+    .cases_deaths{
+        color:red;
+        span{
+            color: #000000;
+        }
+    }
+    .cases_confirmed{
+        color:green;
+        span{
+            color: #000000;
+        }
+    }
+    .cases_recovered{
+        color:blue;
+        span{
+            color: #000000;
+        }
+    }
+    .disclaimer{
+        text-align: start;
+        border-top: 2px solid #DADCE0;
+        margin: 0;
+        padding: 0 10px;
+        h4{
+            margin-bottom: 0;
+            font-size: 0.94vw;
+        }
+        h5{
+            margin: 0;
+            font-size: 0.85vw;
+        }
+        p{
+            font-size: 13px;
+            font-size: 0.66vw;
+        }
+        .sources{
+            border-top: 2px solid #DADCE0;
+            padding-top: 3px;
+            font-size: 11px;
+            font-size: 0.75vw;
+        }
+    }
+}
+
+@media screen and (max-width:959px)  {  
+    .info_section{
+        top: 65vh;
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        padding-top: 1.5%;
+        padding-left: 5%;
+        border-radius: 0;
+        box-sizing: border-box;
+        box-shadow: none;
+        h2{
+            font-size: 2vw;
+            margin: 0;
+            margin-right: 10%;
+        }
+        .cases_deaths{
+            width: 18%;
+            h1{
+                font-size: 1em;
+                font-size: 3.3vw;
+                margin: 0;
+            }
+            span{
+                font-size: .8em;
+                font-size: 2.5vw;
+            }
+        }
+        .section_divider{
+            display: none;
+        }
+        .cases_other{
+            display: flex;
+            width: 35%;
+            justify-content: space-around;
+            .cases_confirmed{
+                height: 100%;
+                margin-left: 5%;
+                h2{
+                    font-size: 1em;
+                    font-size: 3.3vw;
+                    margin: 0;
+                }
+                span{
+                    font-size: .8em;
+                    font-size: 2.5vw;
+                }
+            }
+            .cases_recovered{
+                height: 100%;
+                margin-left: 5%;
+                h2{
+                    font-size: 1em;
+                    font-size: 3.3vw;
+                    margin: 0;
+                }
+                span{
+                    font-size: .8em;
+                    font-size: 2.5vw;
+                }
+            }
+        
+        }
+        .disclaimer{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:639px) {
+    .info_section{
+        top: 76%;
+        height: 30vh;
+        box-shadow: none;
+        h2{
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .cases_deaths{
+            h1{
+                font-size: 1rem;
+            }
+            span{
+                font-size: .8rem;
+            }
+        }
+        .cases_other{
+            .cases_confirmed{
+                
+                h2{
+                    font-size: 1rem;
+                }
+                span{
+                    font-size: .8rem;
+                }
+            }
+            .cases_recovered{
+                h2{
+                    font-size: 1rem;
+                }
+                span{
+                    font-size: .8rem;
+                }
+            }
+        
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .info_section{
+        top: 77%;
+        h2{
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .cases_deaths{
+            h1{
+                font-size: 1rem;
+            }
+            span{
+                font-size: .8rem;
+            }
+        }
+        .cases_other{
+            .cases_confirmed{
+                
+                h2{
+                    font-size: 1rem;
+                }
+                span{
+                    font-size: .8rem;
+                }
+            }
+            .cases_recovered{
+                h2{
+                    font-size: 1rem;
+                }
+                span{
+                    font-size: .8rem;
+                }
+            }
+        
+        }
+    }
+}

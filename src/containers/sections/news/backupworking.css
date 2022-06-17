@@ -1,0 +1,188 @@
+.News_section{
+    position: fixed;
+    top: 57px;
+    right: 0;
+    background-color: white;
+    z-index: 20;
+    width: 35vw;
+    height: 89vh;
+    border-radius: 20px;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: -6px 1px 20px 3px #666;
+    -moz-box-shadow: -6px 1px 20px 3px #666;
+    -webkit-box-shadow: -6px 1px 20px 3px #666;
+    padding-left: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .slidebttn{
+        position: fixed;
+        top: 45%;
+        left: 5px;
+        height: 10%;
+        background-color: rgb(155, 155, 155);
+        width: 7px;
+        border-radius: 5px;
+        border: 1px solid rgb(109, 109, 109);
+        z-index: 20;
+    }
+    .header{
+        background-color: white;
+        width: 100%;
+        h4{
+            font-size: 0.94vw;
+        }
+    }
+    .articles{
+        overflow-y: scroll;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        .articlecontainer{
+            width: 100%;
+            display: inline-flex;
+            border-top: 1px solid #DADCE0;
+            border-bottom: 1px solid #DADCE0;
+            overflow: hidden;
+            padding: 5px;
+            box-sizing: border-box;
+            .article_marker{
+                width: 30%;
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 75%;
+                }
+            }
+            .article_title{
+                width: 70%;
+                height: 100%;
+                text-align: initial;
+                p{
+                    font-weight: 600;
+                    margin: 0;
+                    height: auto;
+                    padding: 10px 0;
+                    font-size: 0.94vw;
+                    padding: 0.5vw 0;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+                span{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #70757a;
+                    display: block;
+                    font-size: 0.73vw;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .end{
+            height: 300px;
+            padding-top: 10px;
+            a{
+                color: #8a8787;
+                font-size: 14px;
+                display: none;
+            }
+        }
+    }
+    
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(94%);
+}
+
+
+@media screen and (max-width:959px)  {    
+    .News_section{
+        width: 100vw;
+        transition: transform 0.5s ease;
+        padding-left: 0;
+        .slidebttn{
+            top: 5px;
+            left: 45%;
+            height: 1vw;
+            width: 10vw;
+        }
+        .header{
+            margin-top: 25px;
+            h4{
+                font-size: 4vw;
+            }
+            
+        }
+        .articles{
+            .articlecontainer{
+                width: 100vw;
+                padding: 5px 10px;
+                .article_title{
+                    p{
+                        font-size: 14px;
+                    }
+                    span{
+                        font-size: 8px;
+                        height: 15%;
+                    }
+                }
+            }
+            .end{
+                a{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    
+    .Open {
+        transform: translateY(0);
+    }
+    
+    .Close {
+        transform: translateY(75%);
+    }
+}
+
+
+@media screen and (min-width:321px) and (max-width:639px) { 
+    .News_section{
+        .header{
+            h4{
+                font-size: 3vw;
+            }
+        }
+        .end{
+            a{
+                display: block;
+            }
+        }
+    }
+
+    .Close{
+        transform: translateY(83%);
+    }
+}
+
+@media screen and (max-width:320px) { 
+    .end{
+        a{
+            display: block;
+        }
+    }
+    .Close{
+        transform: translateY(85%);
+    }
+}

@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.footer{
+    width: 100%;
+    height: 4vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    background-color: white;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 6px 0px 20px 3px #666; 
+    -moz-box-shadow: 6px 0px 20px 3px #666;
+    -webkit-box-shadow: 6px 0px 20px 3px #666;
+    padding: 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    .follow{
+        line-height: 1rem;
+        p{
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0;
+            font-size: 0.94vw;
+            vertical-align: middle;
+        }
+        span{
+            font-weight: 600;
+            margin-left: 5px;
+            a{
+                text-decoration: none;
+                color: #2f2f2f;
+            }
+        }
+    }
+    .poweredby{
+        display: flex;
+        p{
+            margin: 0;
+            font-weight: 600;
+            align-self: center;
+            font-size: 0.94vw;
+            padding-right: 5px;
+        }
+        img{
+            height: 1.5vw;
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:959px) {
+    .footer{
+        display: none;
+    } 
+}
+
+@media screen and (max-width:639px) {
+
+    .footer{
+        display: none;
+    } 
+
+}

@@ -1,0 +1,21 @@
+{
+  "short_name": "Covid News",
+  "name": "Covid News GPS",
+  "icons": [
+    {
+      "src": "covid192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "covid512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation":  "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
